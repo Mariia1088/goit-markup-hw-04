@@ -176,28 +176,6 @@ body {
 .about-item:not(:last-child) {
   margin-right: 30px;
 }
-.about-item::before {
-  display: flex;
-  content: "";
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.icon-satellite::before {
-  background-image: url("../images/Group.svg");
-}
-.icon-watch::before {
-  background-image: url("../images/Group\ 2.svg");
-}
-.icon-computer::before {
-  background-image: url("../images/Group\ 3.svg");
-}
-.icon-astronaut::before {
-  background-image: url("../images/Group\ 4.svg");
-}
 .about-item-title {
   font-size: 14px;
   line-height: 1.14;
