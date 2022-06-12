@@ -98,10 +98,32 @@ body {
 .header-tel:focus {
   color: var(--accent-color);
 }
+.envelope-icon:hover,
+.smartphone-icon:hover,
+.envelope-icon:focus,
+.smartphone-icon:focus {
+fill: var(--accent-color);
+}
 .header-connect {
+  display: flex;
   margin-left: auto;
 }
-
+.envelope-icon,
+.smartphone-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  fill: currentColor;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+svg.icon-envelope {
+  width: 16px;
+  height: 12px;
+}
 .header-mail,
 .header-tel {
   font-size: 14px;
