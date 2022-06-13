@@ -371,10 +371,47 @@ svg.icon-envelope {
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
+.clients-item {
+box-sizing: border-box;
+width: 170px;
+height: 92px;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+}
+.clients-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-icon {
+  fill: #AFB1B8;
+}
+.clients-link:hover,
+.clients-link:focus {
+border: 1px solid #2196F3;
+border-radius: 4px;
+}
+.client-icon:hover,
+.client-icon:focus {
+  fill: var(--accent-color);
+}
+.icon {
+  fill: #FFFFFF;
+}
 /* ----------------------Footer--------------------------*/
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
+}
+.footer-block {
+  display: flex;
+}
+.footer-container {
+  margin-right: 70px;
 }
 .logo-second {
   color: #ffffff;
@@ -408,6 +445,21 @@ svg.icon-envelope {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: var(--typical-margin);
 }
+.social-links-footer {
+  display:block;
+}
+.social-links-title {
+  font-weight: 700;
+font-size: 14px;
+line-height: calc(16 /14);
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-bottom: 20px;
+}
+.item {
+  background: rgba(255, 255, 255, 0.1);
+}
 /* -----------------PORTFOLIO-----------------------------*/
 /* --------------------Portfolio-button----------------------- */
 .portfolio-list {
@@ -422,6 +474,8 @@ svg.icon-envelope {
 .portfolio-btn:focus {
   color: #ffffff;
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
 }
 
 .portfolio-btn {
@@ -468,6 +522,11 @@ svg.icon-envelope {
 }
 .projects-link {
   text-decoration: none;
+}
+.projects-item:hover,
+.projects-item:focus {
+border: 1px solid #EEEEEE;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-signature {
   padding: 20px 24px;
