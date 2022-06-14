@@ -126,11 +126,13 @@ svg.icon-envelope {
 }
 .header-mail,
 .header-tel {
+  display: flex;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   padding: 32px 0;
   color: var(--text-color);
+  align-items: center;
 }
 
 /* -------------------------HERO-------------------- */
@@ -139,7 +141,6 @@ svg.icon-envelope {
   background-color: #2f303a;
   padding: 200px 0;
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -200,6 +201,7 @@ svg.icon-envelope {
 .about-icon {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
   background: #f5f4fa;
@@ -284,6 +286,12 @@ svg.icon-envelope {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.team-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+}
 .team-figcaption {
   padding-top: 30px;
   padding-bottom: 16px;
@@ -328,24 +336,24 @@ svg.icon-envelope {
   align-items: center;
   justify-content: center;
 }
-.social-links:hover,
-.social-links:focus {
-  background-color: var(--accent-color);
-}
 .instagram-icon,
 .twitter-icon,
 .facebook-icon,
 .linkedin-icon {
   fill: #afb1b8;
 }
-.instagram-icon:hover,
-.twitter-icon:hover,
-.facebook-icon:hover,
-.linkedin-icon:hover,
-.instagram-icon:focus,
-.twitter-icon:focus,
-.facebook-icon:focus,
-.linkedin-icon:focus {
+.social-links:hover,
+.social-links:focus {
+  background-color: var(--accent-color);
+}
+.social-links:hover .instagram-icon,
+.social-links:hover .twitter-icon,
+.social-links:hover .facebook-icon,
+.social-links:hover .linkedin-icon,
+.social-links:focus .instagram-icon,
+.social-links:focus .twitter-icon,
+.social-links:focus .facebook-icon,
+.social-links:focus .linkedin-icon {
   fill: #ffffff;
 }
 
@@ -372,11 +380,9 @@ svg.icon-envelope {
   margin-right: 30px;
 }
 .clients-item {
-box-sizing: border-box;
-width: 170px;
-height: 92px;
-border: 1px solid #AFB1B8;
-border-radius: 4px;
+  box-sizing: border-box;
+  width: 170px;
+  height: 92px;
 }
 .clients-link {
   width: 100%;
@@ -386,22 +392,24 @@ border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
 }
 .client-icon {
-  fill: #AFB1B8;
+  fill: currentColor
 }
 .clients-link:hover,
 .clients-link:focus {
-border: 1px solid #2196F3;
-border-radius: 4px;
-}
-.client-icon:hover,
-.client-icon:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
   fill: var(--accent-color);
 }
-.icon {
-  fill: #FFFFFF;
+.clients-link:hover .client-icon,
+.clients-link:focus .client-icon {
+  fill: var(--accent-color);
 }
+
 /* ----------------------Footer--------------------------*/
 .footer {
   background-color: #2f303a;
@@ -446,19 +454,22 @@ border-radius: 4px;
   margin-bottom: var(--typical-margin);
 }
 .social-links-footer {
-  display:block;
+  display: block;
 }
 .social-links-title {
   font-weight: 700;
-font-size: 14px;
-line-height: calc(16 /14);
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #FFFFFF;
-margin-bottom: 20px;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 .item {
   background: rgba(255, 255, 255, 0.1);
+}
+.icon {
+  fill: #ffffff;
 }
 /* -----------------PORTFOLIO-----------------------------*/
 /* --------------------Portfolio-button----------------------- */
@@ -474,8 +485,9 @@ margin-bottom: 20px;
 .portfolio-btn:focus {
   color: #ffffff;
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .portfolio-btn {
@@ -525,8 +537,9 @@ border-radius: 4px;
 }
 .projects-item:hover,
 .projects-item:focus {
-border: 1px solid #EEEEEE;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-signature {
   padding: 20px 24px;
